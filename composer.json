@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dedecube\\LaravelComposer\\": "src/",
-            "Dedecube\\LaravelComposer\\Database\\Factories\\": "database/factories/"
+            "Dedecube\\Composer\\": "src/",
+            "Dedecube\\Composer\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dedecube\\LaravelComposer\\Tests\\": "tests/",
+            "Dedecube\\Composer\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dedecube\\LaravelComposer\\LaravelComposerServiceProvider"
+                "Dedecube\\Composer\\ComposerServiceProvider"
             ],
             "aliases": {
-                "LaravelComposer": "Dedecube\\LaravelComposer\\Facades\\LaravelComposer"
+                "Composer": "Dedecube\\Composer\\Facades\\Composer"
             }
         }
     },
