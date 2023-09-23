@@ -4,8 +4,8 @@ namespace Dedecube\Composer;
 
 use Composer\Factory;
 use Composer\IO\NullIO;
-use Illuminate\Support\Facades\Cache;
 use Dedecube\Composer\Contracts\ComposerInterface;
+use Illuminate\Support\Facades\Cache;
 
 class Composer implements ComposerInterface
 {
