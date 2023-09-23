@@ -17,4 +17,11 @@ class ComposerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-composer');
     }
+
+    public function registeringPackage()
+    {
+        $this->app->bind(Contracts\ComposerInterface::class, function () {
+            return new Composer();
+        });
+    }
 }

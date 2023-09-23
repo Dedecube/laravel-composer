@@ -11,6 +11,6 @@ class Composer extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Dedecube\Composer\Composer::class;
+        return \Dedecube\Composer\Contracts\ComposerInterface::class;
     }
 }
