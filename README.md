@@ -18,7 +18,9 @@ composer require dedecube/laravel-composer
 ## Usage
 
 ```php
-//
+use Dedecube\Composer\Facades\Composer;
+
+$isLaravelNovaInstalled = Composer::isPackageInstalled('laravel/nova');
 ```
 
 ## Testing
