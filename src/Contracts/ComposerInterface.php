@@ -14,7 +14,7 @@ interface ComposerInterface
     /**
      * Determine if the given package is installed.
      *
-     * @param string $packageName The package name.
+     * @param  string  $packageName The package name.
      * @return bool True if the package is installed, false otherwise.
      */
     public function isPackageInstalled($packageName): bool;
