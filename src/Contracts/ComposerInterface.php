@@ -7,7 +7,7 @@ interface ComposerInterface
     /**
      * Get the installed packages.
      *
-     * @return \Composer\Package\BasePackage\BasePackage[]
+     * @return \Composer\Package\BasePackage[]
      */
     public function getInstalledPackages(): array;
 

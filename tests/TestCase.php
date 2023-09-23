@@ -2,6 +2,7 @@
 
 namespace Dedecube\Composer\Tests;
 
+use Dedecube\Composer\ComposerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
