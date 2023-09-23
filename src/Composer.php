@@ -2,6 +2,6 @@
 
 namespace Dedecube\Composer;
 
-class LaravelComposer
+class Composer
 {
 }

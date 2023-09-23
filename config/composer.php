@@ -1,6 +1,6 @@
 <?php
 
-// config for Dedecube/LaravelComposer
+// config for Dedecube/Composer
 return [
 
 ];

@@ -2,9 +2,9 @@
 
 namespace Dedecube\Composer\Tests;
 
-use Dedecube\Composer\LaravelComposerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Dedecube\Composer\ComposerServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Dedecube\\LaravelComposer\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Dedecube\\Composer\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelComposerServiceProvider::class,
+            ComposerServiceProvider::class,
         ];
     }
 

@@ -5,12 +5,12 @@ namespace Dedecube\Composer\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Dedecube\Composer\LaravelComposer
+ * @see \Dedecube\Composer\Composer
  */
-class LaravelComposer extends Facade
+class Composer extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Dedecube\Composer\LaravelComposer::class;
+        return \Dedecube\Composer\Composer::class;
     }
 }

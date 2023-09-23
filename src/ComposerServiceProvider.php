@@ -2,11 +2,10 @@
 
 namespace Dedecube\Composer;
 
-use Dedecube\Composer\Commands\LaravelComposerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LaravelComposerServiceProvider extends PackageServiceProvider
+class ComposerServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +15,6 @@ class LaravelComposerServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-composer')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-composer_table')
-            ->hasCommand(LaravelComposerCommand::class);
+            ->name('laravel-composer');
     }
 }
