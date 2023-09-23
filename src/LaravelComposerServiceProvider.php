@@ -2,9 +2,9 @@
 
 namespace Dedecube\Composer;
 
+use Dedecube\Composer\Commands\LaravelComposerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Dedecube\Composer\Commands\LaravelComposerCommand;
 
 class LaravelComposerServiceProvider extends PackageServiceProvider
 {

@@ -2,9 +2,9 @@
 
 namespace Dedecube\Composer\Tests;
 
+use Dedecube\Composer\LaravelComposerServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Dedecube\Composer\LaravelComposerServiceProvider;
 
 class TestCase extends Orchestra
 {
